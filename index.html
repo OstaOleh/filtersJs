@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Filters</title>
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <aside>
+            <div class="file__wrap" data-name="Виберіть зображення">
+                <input type="file" name="" id="file" accept=".jpg, .jpeg, .png">
+            </div>
+            <div class="inp__wrap">
+                <label for="brightness">Яскравість</label>
+                <input type="range" min="0" max="200" class="range" id="brightness">
+                <span class="inp-val"></span>
+            </div>
+            <div class="inp__wrap">
+                <label for="contrast">Контраст</label>
+                <input type="range" min="0" max="200" class="range" id="contrast">
+                <span class="inp-val"></span>
+            </div>
+            <div class="inp__wrap">
+                <label for="grayscale">Відтінок сірого</label>
+                <input type="range" min="0" max="100" class="range" id="grayscale">
+                <span class="inp-val"></span>
+            </div>
+            <div class="inp__wrap">
+                <label for="hue-rotate">Відтінок-обертання
+                </label>
+                <input type="range" min="0" max="360" class="range" id="hue-rotate">
+                <span class="inp-val"></span>
+            </div>
+            <div class="inp__wrap">
+                <label for="invert">Інверність</label>
+                <input type="range" min="0" max="100" class="range" id="invert">
+                <span class="inp-val"></span>
+            </div>
+            <div class="inp__wrap">
+                <label for="saturate">Насиченість</label>
+                <input type="range" min="0" max="200" class="range" id="saturate">
+                <span class="inp-val"></span>
+            </div>
+            <div class="inp__wrap">
+                <label for="sepia">Сепія</label>
+                <input type="range" min="0" max="100" class="range" id="sepia">
+                <span class="inp-val"></span>
+            </div>
+            <a href="#" class="btn btn-reset">Скинути</a>
+        </aside>
+        <div class="content">
+            <div class="content--top">
+                <section class="section--bgi" style="background-image: url(https://wallpapercave.com/wp/9ACphfA.jpg)">
+                    <h1>Filters</h1>
+                </section>
+            </div>
+            <div class="content--bottom">
+                <div class="slider">
+                    <div class="slide one" style="background-image: url(https://wallpapercave.com/wp/9ACphfA.jpg)"></div>
+                    <div class="slide two" style="background-image: url(https://wallpapercave.com/wp/9ACphfA.jpg)"></div>
+                    <div class="slide three" style="background-image: url(https://wallpapercave.com/wp/9ACphfA.jpg)"></div>
+                    <div class="slide four" style="background-image: url(https://wallpapercave.com/wp/9ACphfA.jpg)"></div>
+                    <div class="slide five" style="background-image: url(https://wallpapercave.com/wp/9ACphfA.jpg)"></div>
+                    <div class="slide six" style="background-image: url(https://wallpapercave.com/wp/9ACphfA.jpg)"></div>
+                    
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+    <script src="src/app.js"></script>
+</body>
+
+</html>

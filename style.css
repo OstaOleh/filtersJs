@@ -1,0 +1,160 @@
+:root {
+    --accent-color: #3c455c;
+    --text-color: #E4D9D6;
+    --aside-color: #685642;
+}
+body, html, h1 {
+    margin: 0;
+    padding: 0;
+}
+header {
+    text-align: center;
+    background-color: var(--accent-color);
+    color: var(--text-color);
+}
+h1 {
+    padding: 10px 0;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow:  2px 2px #000;
+}
+.wrapper {
+    width: 100%;
+    color: var(--text-color);
+    font-family: 'Oswald', sans-serif;
+    display: flex;
+}
+.content {
+    width: 100%;
+}
+.btn {
+    width: 100%;
+    display: block;
+    background-color: var(--text-color);
+    text-align: center;
+    text-decoration: none;
+    color: var(--accent-color);
+     border: 1px solid var(--text-color);
+     transition: all .4s ease
+}
+.btn:hover {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    border-color: var(--text-color);
+}
+aside {
+    width: 20%;
+    height: 100vh;
+    background-color: var(--accent-color);
+    filter: brightness(75%);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+#file {
+    cursor: inherit;
+    display: block;
+    width: 100%;
+    position: relative;
+    z-index: 99;
+    opacity: 0;
+    height: 24px;
+}
+.file__wrap {
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 20px;
+    cursor: pointer;
+    z-index: -1;
+    height: 24px;
+    
+}
+.file__wrap:hover::after {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    border-color: var(--text-color);
+}
+.file__wrap::after {
+    content: attr(data-name);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border: 1px solid var(--text-color);
+    color: var(--accent-color);
+    background-color: var(--text-color);
+    transition: all .4s ease;
+}
+.section--bgi {
+    background-color: var(--accent-color);
+    width: 100%;
+    height: 75vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.content--bottom {
+    position: relative;
+    width: 100%;
+    height: 25vh;
+    overflow: hidden;
+}
+.slider {
+    display: flex;
+    position: absolute;
+    height: 100%;
+    width: 200%;
+    overflow: hidden;
+    background-color: var(--accent-color);
+}
+.slide {
+    height: 100%;
+    width: 33.3333%;
+    background-size: cover;
+    border: 5px solid var(--accent-color);
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: border-color .5s
+}
+.inp__wrap {
+    display: flex;
+
+}
+.inp__wrap>label {
+    flex: 1 1 100%;
+    width: 100%;
+}
+.range {
+    margin-bottom: 20px;
+    margin-right: 10px;
+}
+.one {
+    filter: contrast(138%) hue-rotate(0deg) brightness(122%) saturate(0%) sepia(0%);
+}
+.two {
+    filter: contrast(94%) hue-rotate(-54deg) brightness(92%) saturate(100%) sepia(44%);
+}
+.three {
+    filter: contrast(32%) hue-rotate(0deg) brightness(173%) saturate(0%) sepia(0%);
+}
+.four {
+    filter: contrast(164%) hue-rotate(0deg) brightness(47%) saturate(0%) sepia(100%);
+}
+.five {
+    filter: contrast(110%) saturate(190%) sepia(70%) grayscale(30%);
+    ;
+}
+.six {
+    filter: contrast(85%) brightness(110%) saturate(75%) sepia(22%);
+    ;
+}
+.slide:hover {
+    border-color: var(--text-color);
+}
